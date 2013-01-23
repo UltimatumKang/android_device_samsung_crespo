@@ -67,6 +67,11 @@ PRODUCT_COPY_FILES += \
 	device/samsung/crespo/mxt224_ts_input.kl:system/usr/keylayout/mxt224_ts_input.kl \
 	device/samsung/crespo/mxt224_ts_input.kcm:system/usr/keychars/mxt224_ts_input.kcm
 
+#For Crespo Kernel
+PRODUCT_COPY_FILES += \
+        device/samsung/crespo/prebuilts/cpufreq_conservative.ko:system/modules/cpufreq_conservative.ko \
+        device/samsung/crespo/prebuilts/cpufreq_ondemand.ko:system/modules/cpufreq_ondemand.ko
+
 #NVRAM setup
 PRODUCT_COPY_FILES += \
         device/samsung/crespo/nvram_net.txt:system/vendor/firmware/nvram_net.txt
