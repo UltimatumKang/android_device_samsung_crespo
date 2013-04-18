@@ -29,6 +29,8 @@ PRODUCT_PACKAGES += \
         VisualizationWallpapers \
         librs_jni
 
+#PRODUCT_COPY_FILES := device/samsung/crespo/99mount.txt:system/etc/init.d/99mount.txt
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # This is where we'd set a backup provider if we had one
