@@ -5,7 +5,7 @@ $(call inherit-product, device/samsung/crespo/full_crespo.mk)
 $(call inherit-product, vendor/ukg/config/common.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/aosp/config/gsm.mk)
+$(call inherit-product, vendor/ukg/config/gsm.mk)
 
 # Crespo Overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/ukg/overlay/crespo
